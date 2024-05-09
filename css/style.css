@@ -1,0 +1,425 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'cormorant garamond';
+    color: antiquewhite;
+}
+
+body{
+    background-color: #282828;
+    position: relative;
+}
+
+#menu{
+    height: 8vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    /* filter: blur(1.5rem);     */
+    /* 看这里看这里 */
+}
+
+header {
+    position: relative;
+}
+
+.navigation{
+    width: 100%;
+    height: 60px;
+    backdrop-filter: blur(100px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.navigation img{
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation a{
+    text-decoration: none;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.navigation a:hover{
+    color: #F8D638;
+}
+
+.hero video{
+    width: 100%;
+    height:550px;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 1024px) {
+    .navigation img{
+        width: 140px;
+    }
+
+    .navigation a{
+        font-size: 16px;
+    }
+}
+/* main开始啦   终于TvT... */
+
+main{
+    margin: 0vh 8vh ;
+}
+
+@media screen and (min-width: 1024px) {
+    main{
+        margin: 0vh 16vh ;
+    }
+}
+
+
+
+h1{
+    color: antiquewhite;
+    font-size: 8vh;
+    font-weight: 600;
+    font-family: 'Cormorant';
+    text-align: center;
+    margin: 10vh;
+    
+}
+
+h3{
+    font-size: 6vh;
+    font-weight: 300;
+}
+
+#home-main{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+#home-main img{
+    width: 50%;
+}
+
+.facai{
+    display: flex;
+    margin-top: 4rem;
+    column-gap: 2vw;
+    row-gap: 0;
+}
+
+.reverse {
+    flex-direction: row;
+}
+
+.facai-img {
+    object-fit: cover; 
+    width:50%; 
+    height:330px
+}
+
+
+.fafacai{
+    display: flex;
+    flex-direction: column;
+    padding: 5vh 0vh;
+    width: 45%;
+}
+
+.fafacai p{
+    font-family: 'poppins';
+    font-weight: lighter;
+    font-size: 1rem;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .facai{
+        display: flex;
+        flex-direction: column;
+        /* width: 100%; */
+        column-gap: 0;
+        row-gap: 2vw;
+    }
+
+    .reverse {
+        flex-direction: column-reverse;
+    }
+
+    h1{
+        font-size: 50pt;
+    }
+   
+    #home-main h3{
+        font-size: 30pt;
+    }
+
+    .fafacai{
+        width: 100%;
+    }
+
+    #home-main img{
+        width: 100%;
+    }
+
+    .fafacai p{
+        font-size: 16pt;
+    }
+
+    .facai-img {
+        width:100%; 
+    }
+
+}
+
+/* footer 开始啦 */
+
+footer{
+    width: 100%;
+    /* margin: 0vh 16vh ; */
+    background-color: #4B68AF;
+    margin-top: 8rem;
+}
+
+.icon{
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 5%;
+}
+
+/* .icon img{
+    width: 4%;
+    color: #ffff;
+    fill: white;
+} */
+
+.footermain{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 5vh 16vh ;
+}
+
+.footerinfo p{
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 12pt;
+    line-height: 18pt;
+}
+
+
+
+#border{
+    /* border: 0.5px solid #282828; */
+    /* color: #282828; */
+    margin: 0vh 16vh;
+    border-bottom: 1px solid #282828;
+
+}
+
+#copyright{
+    font-family: 'Poppins';
+    font-size: 10pt;
+    font-weight: 200;
+    /* margin: 20px 0px ; */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding: 2vh 16vh 6vh;
+}
+
+.fa-brands{
+    margin: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .footermain{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+  }
+
+  #border{
+    margin:  0px 50px ;
+  }
+
+#copyright{
+    padding: 20px 50px;
+}
+
+.footermain p{
+    font-size: 13pt;
+    font-weight: 300;
+}
+
+.footermain .icon{
+    width: 100%;
+}
+
+}
+
+/* -----------------------Programació--------------------------- */
+
+
+
+#background-2{
+    background-color: #282828;
+}
+
+#programation_main {  
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    margin-bottom: 15vh;
+}
+
+#programation_main .row {  
+    display: flex;
+    width: 100%;
+    height: 100%;
+    column-gap: 10px;
+    row-gap: 10px;
+    flex-wrap: wrap;
+}
+
+#programation_main img { 
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+}
+
+
+#programation_main .gradient { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(220,220,220,0) 0%, rgba(0,0,0,1) 120%);
+}
+
+.bigImg {  
+    position: relative;
+    width: 100%;
+    height: 380px;
+}
+
+.smallImg {  
+    position: relative;
+    width: 100%;
+    height: 380px;
+}
+
+
+@media screen and (min-width: 1024px) {
+    #programation_main .row {  
+        flex-wrap: nowrap;
+    }
+    .bigImg {  
+        width: 60%;
+    }
+    .smallImg {  
+        width: 40%;
+    }
+}
+
+.text-programation{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+}
+
+.p_big{
+    font-size: 32pt;
+    font-weight: 600;
+}
+
+.p_middle{
+    font-family: 'Poppins';
+    font-weight: 300;
+    line-height: 18pt;
+}
+
+.p_small{
+    font-family: 'Poppins';
+    font-weight: 300;
+    color: #F8D638;
+    font-size: 10pt;
+}
+
+
+
+/* //////////////////contact 啊啊啊先干点别的//////////// */
+
+.contact-main_esquerra p{
+    font-family: 'Poppins';
+    font-weight: 300;
+    display: flex;
+}
+
+#contact-main{
+    display: flex;
+    justify-content: space-between;
+line-height: 30pt;
+}
+
+.butoenviar{
+    background-color: #4B68AF;
+    padding: 7px 15px;
+    font-family: 'Poppins';
+    border: none;
+    display: flex;
+    margin: 15px 0px;
+    float: right;
+}
+
+.inputsContacto{
+    background-color: transparent;
+    border: none;
+    border-bottom: .1px solid #4B68AF;
+    color: white;
+    margin: 20px 0;
+    box-sizing: border-box;
+    width: 100%;
+    font-family: 'Poppins';
+    font-weight: 100;
+}
+
+.contact-main_esquerra .facai{
+    font-size: 10pt;
+    font-weight: 300;
+    margin: 0px;
+}
+
+@media screen and (max-width: 768px) {
+   .p_big{
+    font-size: 33pt;
+  }
+
+#contact-main{
+    display: flex;
+        flex-direction: column;
+
+}
+
+#contact-main .contact-main_esquerra{
+    font-size: 12pt;
+}
+
+#contact-main #form {
+    margin-top: 10px;
+}
+
+}
